@@ -1,0 +1,131 @@
+.add {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 1200px;
+        padding: 50px 0;
+
+        h1 {
+            color: gray;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+
+            .left,
+            .right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: space-between;
+
+                label {
+                    color: gray;
+                    font-size: 1.2rem;
+                }
+
+                input,
+                select,
+                texarea {
+                    padding: 16px;
+                }
+
+                .images {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .imagesInputs {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6px;
+                    }
+
+                    button {
+                        background-color: black;
+                        color: white;
+                        padding: 8px;
+                        border: none;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
+                }
+
+                button {
+                    background-color: black;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+
+                button:hover {
+                    background-color: lighten(black, 15%);
+                }
+
+                .add {
+                    display: flex;
+                    justify-content: space-between;
+
+                    input {
+                        width: 80%;
+                    }
+
+                    button {
+                        background-color: black;
+                        color: white;
+                        padding: 8px 15px;
+                        border: none;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
+
+                    button:hover {
+                        background-color: lighten(black, 15%);
+                    }
+                }
+
+                .addedFeatures {
+                    display: flex;
+                    gap: 20px;
+
+                    button {
+                        background-color: transparent;
+                        color: black;
+                        padding: 5px 8px;
+                        border: 0.8px dashed black;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                    }
+
+                    button:hover {
+                        border: 0.8px dashed darkgray;
+                        color: darkgray;
+
+                        span {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

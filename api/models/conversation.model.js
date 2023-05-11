@@ -1,0 +1,42 @@
+import mongoose from "mongoose";
+import { Schema } from "mongoose";
+
+const ConversationSchema = new Schema({
+    id: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    sellerId: {
+        type: String,
+        required: true,
+    },
+    buyerId: {
+        type: String,
+        required: true,
+    },
+    readBySeller: {
+        type: Boolean,
+        required: true,
+    },
+    readByBuyer: {
+        type: Boolean,
+        required: true,
+    },
+    lastMessage: {
+        type: String,
+        required: false,
+    },
+    sellerUsername: {
+        type: String,
+        required: true,
+    },
+    buyerUsername: {
+        type: String,
+        required: true,
+    }
+}, {
+    timestamps: true
+});
+
+export default mongoose.model("Conversation", ConversationSchema);

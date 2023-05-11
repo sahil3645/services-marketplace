@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 5px;
+    transition: 0.5s all ease;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    &.active {
+        background-color: white;
+        color: black;
+    }
+
+    .container {
+        width: 1200px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.8rem;
+            font-family: "Poppins", sans-serif;
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            font-weight: 400;
+            font-size: 1rem;
+
+            span:hover {
+                color: grey;
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                span:hover {
+                    color: grey;
+                }
+
+                .options {
+                    position: absolute;
+                    top: 50px;
+                    right: 0;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 10px;
+                    border: 1px solid lightgray;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    color: gray;
+                    width: 150px;
+                    font-weight: 400;
+
+                    span:hover {
+                        color: lighten(black, 20%);
+                    }
+                }
+            }
+
+            button {
+                color: white;
+                padding: 6px 16px;
+                border-radius: 5px;
+                border: 0.5px solid white;
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover {
+                    background-color: #f9f7f7;
+                    color: #3f72af;
+                }
+
+                &.active {
+                    background-color: black;
+                    color: white;
+
+                    &:hover {
+                        background-color: white;
+                        border: 0.5px solid black;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+        height: 0;
+        border: 0.5px solid #f9f7f7;
+    }
+
+    .menu {
+        width: 1200px;
+        padding: 2px 0;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 200;
+        color: gray;
+
+        .link:hover {
+            color: black;
+        }
+    }
+}

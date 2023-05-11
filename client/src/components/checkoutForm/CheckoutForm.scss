@@ -1,0 +1,62 @@
+$color-primary: black;
+$color-secondary: #faa61a;
+$color-background: #f9f9f9;
+$color-text: #333;
+
+#payment-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    height: 70vh;
+
+    #payment-element,
+    #link-authentication-element {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        background-color: #fff;
+
+        .StripeElement--webkit-autofill {
+            background-color: #fafafa !important;
+        }
+    }
+
+    #submit {
+        display: block;
+        background-color: $color-primary;
+        color: #fff;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: lighten($color-primary, 20%);
+        }
+
+        &[disabled] {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+    }
+
+    #payment-message {
+        padding: 20px;
+        border-radius: 5px;
+        color: black;
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: center;
+
+        &.success {
+            background-color: $color-secondary;
+        }
+
+        &.error {
+            background-color: #ff4d4f;
+        }
+    }
+}

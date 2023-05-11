@@ -1,0 +1,42 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+    padding: 100px;
+    gap: 50px;
+    height: 50vh;
+
+    .countdown-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        .countdown {
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            color: #000;
+            animation: blink 1s linear infinite;
+        }
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
